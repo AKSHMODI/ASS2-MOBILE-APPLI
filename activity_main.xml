@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Search Location Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Address to Search" />
+
+    <EditText
+        android:id="@+id/etSearchAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will be displayed here" />
+
+    <!-- Add Location Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Location" />
+
+    <EditText
+        android:id="@+id/etAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etAddLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etAddLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Location" />
+
+    <!-- Location List Section -->
+    <ListView
+        android:id="@+id/lvLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
